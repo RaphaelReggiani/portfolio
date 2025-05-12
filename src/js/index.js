@@ -1,19 +1,29 @@
 const botaoMostrarProjetos = document.querySelector('.btn-mostrar-projetos');
-const projetosInativos = document.querySelectorAll('.projeto:not(.ativo)');
+const projetosOcultos = document.querySelector('.projetos-ocultos');
+
+let projetosVisiveis = false;
 
 botaoMostrarProjetos.addEventListener('click', () => {
+  projetosVisiveis = !projetosVisiveis;
 
-    mostrarMaisProjetos();
+  if (projetosVisiveis) {
+    mostrarProjetos();
+  } else {
+    esconderProjetos();
+  }
 
-    esconderBotao();
+  atualizarTextoBotao();
 });
 
-function esconderBotao() {
-    botaoMostrarProjetos.classList.add("remover");
+function mostrarProjetos() {
+  projetosOcultos.style.display = 'block';
 }
 
-function mostrarMaisProjetos() {
-    projetosInativos.forEach(projetoInativo => {
-        projetoInativo.classList.add('ativo');
-    });
+function esconderProjetos() {
+  projetosOcultos.style.display = 'none';
 }
+
+function atualizarTextoBotao() {
+  botaoMostrarProjetos.textContent = projetosVisiveis ? 'Mostrar menos' : 'Mostrar mais';
+}
+
