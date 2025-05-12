@@ -6,20 +6,9 @@ html {
 body {
 	font-family: "Poppins", sans-serif;
 	margin: 0 auto;
-	max-width: 1440px;
-	background: linear-gradient(150deg, #080438, #ffffff);
+	max-width: 1120px;
+	background: linear-gradient(150deg, #1C1C1C, #D3D3D3);
 	background-size: 120% 120%;
-}
-
-.rodape {
-  background-color: #040027;
-  color: #fff;
-  text-align: center;
-  padding: 10px 10px;
-}
-
-.rodape p {
-  margin: 0 0 1px;
 }
 
 .cabecalho {
@@ -33,29 +22,29 @@ body {
 	width: 65px;
 	height: 65px;
 	border-radius: 50%;
-	border: 2px solid #040027;
+	border: 2px solid #FFD700;
 	text-align: center;
 	line-height: 55px;
 	font-family: "Raleway", sans-serif;
-	transition: 0.9s;
+	transition: 0.5s;
 }
 
 .cabecalho a:hover .logo {
-	color: #040027;
-	border: 2px solid #040027;
+	color: #FFD700;
+	border: 2px solid #FFD700;
 }
 
 .cabecalho .menu li a {
 	font-size: 20px;
 	text-transform: capitalize;
 	padding: 10px 20px;
-	transition: 0.9s;
+	transition: 0.5s;
 }
 
 .cabecalho .menu li a:hover {
-    color: #040027;
-    border: 2px solid #040027;
-    transition: 0.9s;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    transition: 0.5s;
 	border-radius: 50px;
 }
 
@@ -90,24 +79,24 @@ body {
 
 .home .redes-sociais {
 	display: flex;
-	gap: 15px;
+	gap: 20px;
 }
 
 .home .redes-sociais a i {
-	border: 1px solid #040027;
+	border: 1px solid #FFD700;
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
 	padding: 10px;
-	text-align: right;
-	font-size: 28px;
-	transition: 0.9s;
+	text-align: center;
+	font-size: 26px;
+	transition: 0.5s;
 }
 
 .home .redes-sociais a i:hover {
-	color: #040027;
-	border: 1px solid #040027;
-	transform: scale(1.0);
+	color: #FFD700;
+	border: 1px solid #FFD700;
+	transform: scale(1.1);
 }
 
 .home .container-foto .foto {
@@ -121,18 +110,18 @@ body {
 }
 
 .home .foto.sombra-interna {
-	background: linear-gradient(to right, #080438, #fff);
+	background: linear-gradient(to right, #FFD700, #1C1C1C, #D3D3D3);
 	background-size: 180% 180%;
 	animation: gradient-animation 5s ease infinite;
 }
 
 .projetos {
-	padding: 50px 0 50px;
+	padding: 70px 0 70px;
 }
 
 .projetos .titulo {
 	text-align: center;
-	padding: 45px 0;
+	padding: 60px 0;
 	font-size: 45px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -140,28 +129,30 @@ body {
 
 .projetos .container-projetos {
 	display: flex;
-	gap: 150px;
+	gap: 20px;
 	flex-wrap: wrap;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	justify-content: center;
 }
 
 .projetos .projeto {
-	max-width: 520px;
+	max-width: 260px;
 	max-height: 350px;
 	position: relative;
-	display: flex;
-	flex-direction: column;
+	display: none;
+}
+
+.projetos .projeto.ativo {
+	display: block;
 }
 
 .projetos .projeto img {
 	height: 100%;
-	object-fit: fill;
 }
 
 .projetos .projeto h3 {
-	background-color: #040027;
-    color: #fff;
+	background-color: #D3D3D3;
+    color: #1C1C1C;
 	width: 100%;
 	padding-left: 10px;
 	padding-bottom: 5px;
@@ -171,26 +162,26 @@ body {
 }
 
 .projetos .projeto .informacoes-projeto {
-	background-color: #040027;
+	background-color: #FFD700;
 	position: absolute;
 	top: 0;
 	width: 100%;
 	height: 100%;
 	font-weight: 600;
 	opacity: 0;
-	transition: 0.9s;
+	transition: 0.5s;
 	padding: 20px;
 }
 
 .projetos .container-projetos .projeto:hover .informacoes-projeto {
-	opacity: 0.9;
-	background-color: #040027;
+	opacity: 0.7;
+	background-color: #D3D3D3;
 }
 
 .projetos .btn-mostrar-projetos {
 	background: none;
 	border: 1px solid #fff;
-	border-radius: 50px;
+	border-radius: 15px;
 	color: #fff;
 	width: 180px;
 	padding: 20px;
@@ -204,15 +195,14 @@ body {
 }
 
 .projetos .btn-mostrar-projetos:hover {
-    color: #040027;
-	border: 1px solid #040027;
-	transition: 0.9s;
+    color: #FFD700;
+	border: 2px solid #FFD700;
+	transition: 0.5s;
 }
 
 .projetos .btn-mostrar-projetos.remover {
 	display: none;
 }
-
 
 @keyframes gradient-animation {
 	0% {
