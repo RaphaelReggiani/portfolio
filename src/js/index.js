@@ -16,7 +16,7 @@ botaoMostrarProjetos.addEventListener('click', () => {
 });
 
 function mostrarProjetos() {
-  projetosOcultos.style.display = 'block';
+  projetosOcultos.style.display = 'flex';
 }
 
 function esconderProjetos() {

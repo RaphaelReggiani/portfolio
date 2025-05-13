@@ -127,12 +127,12 @@ body {
 }
 
 .projetos {
-	padding: 50px 0 50px;
+	padding: 0 0 20px;
 }
 
 .projetos .titulo {
 	text-align: center;
-	padding: 45px 0;
+	padding: 35px 0;
 	font-size: 45px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -140,9 +140,9 @@ body {
 
 .projetos .container-projetos {
 	display: flex;
-	gap: 150px;
+	gap: 100px;
 	flex-wrap: wrap;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	justify-content: center;
 }
 
@@ -157,6 +157,10 @@ body {
 .projetos .projeto img {
 	height: 100%;
 	object-fit: fill;
+}
+
+.projetos .projetos-ocultos {
+	gap: 100px;
 }
 
 .projetos .projeto h3 {
