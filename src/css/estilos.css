@@ -160,13 +160,17 @@ body {
 }
 
 .projetos .projetos-ocultos {
+	position: relative;
 	display: flex;
 	gap: 100px;
 	flex-wrap: wrap;
-	position: relative;
 	margin-bottom: 10px;
 	justify-content: center;
-	display: flex;
+}
+
+.projetos .projetos-ocultos img {
+	height: 100%;
+	object-fit: fill;
 }
 
 .projetos .projeto h3 {
