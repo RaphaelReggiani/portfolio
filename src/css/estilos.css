@@ -148,7 +148,7 @@ body {
 
 .projetos .projeto {
 	max-width: 500px;
-	max-height: 280px;
+	max-height: 325px;
 	position: relative;
 	display: flex;
 	flex-direction: column;
