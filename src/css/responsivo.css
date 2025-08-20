@@ -1,4 +1,5 @@
-@media (max-width: 1280px) {
+@media(max-width: 1280px) {
+    
     .cabecalho {
         padding: 30px;
     }
@@ -7,10 +8,15 @@
         flex-direction: column;
         align-items: center;
         margin: 50px 0;
-        gap: 30px;
+        gap: 20px;
     }
 
-    .home .informacoes,
+    .home .informacoes {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
     .home .sobre {
         max-width: 100%;
         text-align: center;
@@ -18,60 +24,34 @@
     }
 
     .projetos .container-projetos {
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .menu ul {
         flex-direction: column;
-        gap: 10px;
-        padding: 0;
-    }
-
-    .menu li a {
-        padding: 10px 15px;
-        font-size: 18px;
-    }
-
-    .projetos .container-projetos {
-        flex-direction: column;
-        gap: 30px;
+        gap: 5px;
         padding: 0 15px;
     }
-
-    .projetos .projeto {
-        max-width: 100%;
-    }
 }
 
-@media (max-width: 405px) {
-    .home .informacoes h1,
-    .home .sobre h1 {
-        font-size: 20px;
+@media(max-width: 425px) {
+    .home .informacoes h1 {
+        font-size: 30px;
     }
 
-    .home .informacoes p,
+    .home .informacoes p {
+        font-size: 16px;
+    }
+
+    .home .sobre h1 {
+        font-size: 30px;
+    }
+
     .home .sobre p {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .home .container-foto img {
         max-width: 320px;
-        max-height: 320px;
     }
 
     .projetos {
-        padding: 25px;
-    }
-
-    .projetos .container-projetos {
-        gap: 20px;
-    }
-
-    .menu li a {
-        font-size: 16px;
-        padding: 8px 12px;
+        padding: 20px;
     }
 }
