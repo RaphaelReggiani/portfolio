@@ -17,6 +17,12 @@
         align-items: center;
     }
 
+    .home .sobre {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
     .projetos .container-projetos {
         padding: 0 20px;
     }
