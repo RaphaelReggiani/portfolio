@@ -1,57 +1,81 @@
 @media(max-width: 1280px) {
-    
-    .cabecalho {
-        padding: 30px;
-    }
 
-    .home {
-        flex-direction: column;
-        align-items: center;
-        margin: 50px 0;
-        gap: 20px;
-    }
+	.cabecalho {
+		padding: 20px 15px;
+		flex-direction: column;
+		gap: 15px;
+	}
 
-    .home .informacoes {
-        max-width: 100%;
-        text-align: center;
-        align-items: center;
-    }
+	.home {
+		flex-direction: column;
+		align-items: center;
+		margin: 50px 0;
+		gap: 30px;
+		min-height: auto;
+	}
 
-    .home .sobre {
-        max-width: 100%;
-        text-align: center;
-        align-items: center;
-    }
+	.home .informacoes,
+	.home .sobre {
+		max-width: 100%;
+		text-align: center;
+		align-items: center;
+	}
 
-    .projetos .container-projetos {
-        flex-direction: column;
-        gap: 5px;
-        padding: 0 15px;
-    }
+	.projetos .container-projetos {
+		padding: 0 20px;
+	}
 }
 
-@media(max-width: 425px) {
-    .home .informacoes h1 {
-        font-size: 30px;
-    }
+@media(max-width: 768px) {
 
-    .home .informacoes p {
-        font-size: 16px;
-    }
+	.projetos .container-projetos,
+	.projetos .projetos-ocultos {
+		flex-direction: column;
+		gap: 25px;
+	}
 
-    .home .sobre h1 {
-        font-size: 30px;
-    }
+	.projetos .projeto {
+		max-width: 100%;
+	}
 
-    .home .sobre p {
-        font-size: 16px;
-    }
+	.home .container-foto img {
+		max-width: 250px;
+	}
 
-    .home .container-foto img {
-        max-width: 320px;
-    }
+	.home .informacoes h1,
+	.home .sobre h1 {
+		font-size: 25px;
+	}
 
-    .projetos {
-        padding: 20px;
-    }
+	.home .informacoes p,
+	.home .sobre p {
+		font-size: 14px;
+	}
+
+	.projetos .titulo {
+		font-size: 30px;
+	}
 }
+
+@media(max-width: 405px) {
+
+	.home .informacoes h1,
+	.home .sobre h1 {
+		font-size: 20px;
+	}
+
+	.home .informacoes p,
+	.home .sobre p {
+		font-size: 10px;
+	}
+
+	.home .container-foto img {
+		max-width: 180px;
+		max-height: 180px;
+	}
+
+	.projetos {
+		padding: 25px;
+	}
+}
+

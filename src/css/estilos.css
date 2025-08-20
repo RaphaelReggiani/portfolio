@@ -9,17 +9,20 @@ body {
 	max-width: 1440px;
 	background: linear-gradient(150deg, #080438, #ffffff);
 	background-size: 120% 120%;
+	overflow-x: hidden; /* evita rolagem horizontal */
 }
 
 .rodape {
-  background-color: #040027;
-  color: #fff;
-  text-align: center;
-  padding: 10px 10px;
+	background-color: #040027;
+	color: #fff;
+	text-align: center;
+	padding: 10px 10px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .rodape p {
-  margin: 0 0 1px;
+	margin: 0 0 1px;
 }
 
 .cabecalho {
@@ -53,12 +56,13 @@ body {
 }
 
 .cabecalho .menu li a:hover {
-    color: #040027;
-    border: 2px solid #040027;
-    transition: 0.9s;
+	color: #040027;
+	border: 2px solid #040027;
+	transition: 0.9s;
 	border-radius: 50px;
 }
 
+/* HOME */
 .home {
 	display: flex;
 	min-height: calc(100vh - 125px);
@@ -178,6 +182,7 @@ body {
 .projetos .projeto img {
 	height: 100%;
 	object-fit: fill;
+	width: 100%;
 }
 
 .projetos .projetos-ocultos {
@@ -192,11 +197,12 @@ body {
 .projetos .projetos-ocultos img {
 	height: 100%;
 	object-fit: fill;
+	width: 100%;
 }
 
 .projetos .projeto h3 {
 	background-color: #040027;
-    color: #fff;
+	color: #fff;
 	width: 100%;
 	padding-left: 10px;
 	padding-bottom: 5px;
@@ -239,7 +245,7 @@ body {
 }
 
 .projetos .btn-mostrar-projetos:hover {
-    color: #040027;
+	color: #040027;
 	border: 1px solid #040027;
 	transition: 0.9s;
 }
@@ -248,17 +254,8 @@ body {
 	display: none;
 }
 
-
 @keyframes gradient-animation {
-	0% {
-		background-position: 0% 50%;
-	}
-
-	50% {
-		background-position: 100% 50%;
-	}
-
-	100% {
-		background-position: 0% 50%;
-	}
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
 }
