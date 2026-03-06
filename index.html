@@ -46,7 +46,7 @@
     <section class="home">
       <div class="informacoes">
         <h1>Olá, sou o Raphael Regiani.</h1>
-        <p>Desenvolvedor Python fullstack com foco no backend, entusiasta e apaixonado por tecnologia, sempre me desafiando com novos projetos na área da programação.</p>
+        <p>Engenheiro de software com foco em desenvolvimento backend no ecossistema Python, Django e Django REST Framework (DRF), com experiência na implementação de APIs REST, arquitetura API-First, controle de permissões, operações CRUD complexas e autenticação segura baseada em JWT, integradas a bancos de dados relacionais</p>
         <p>
           Meus contatos:
         </p>
@@ -98,23 +98,73 @@
     <section class="home" id="sobre">
       <div class="sobre">
         <h1>SOBRE MIM</h1>
-        <p>Sou engenheiro com experiência prática na criação de sistemas web completos utilizando Python, Django e Django REST Framework. Desenvolvi aplicações de gerenciamento com autenticação personalizada, CRUDs complexos, filtros avançados, API REST e integração com banco de dados, unindo minha bagagem em engenharia à capacidade de criar soluções tecnológicas eficientes.</p>
-        <p>Busco oportunidades para aplicar essa combinação de visão analítica, organização e desenvolvimento backend para entregar projetos de alto impacto.</p>
+        <p>Tenho experiência prática no desenvolvimento de aplicações web completas, incluindo sistemas com autenticação de usuários, gerenciamento de permissões, APIs REST com JWT, geração de documentos, logs e integração com frontend. Trabalho com Python, Django, Django REST Framework, SQL (MySQL / Oracle), HTML, CSS, Git/GitHub e AWS, seguindo boas práticas de arquitetura, organização de código e versionamento.</p>
+        <p>Possuo background sólido em engenharia elétrica, com mais de 14 anos de experiência profissional, o que desenvolveu um perfil altamente analítico, disciplinado e orientado à resolução estruturada de problemas, competências aplicadas diretamente no desenvolvimento de software.</p>
+        <p>Fluente em inglês, com facilidade para leitura de documentação técnica e colaboração em ambientes de desenvolvimento internacionais. </p>
+
       </div>
 
     </section>
 
-    <section class="projetos" id="projetos">
-      <h2 class="titulo">Projetos</h2>
-    
-      <div class="container-projetos">
-        <!-- Projetos visíveis por padrão -->
+  <section class="projetos" id="projetos">
+    <h2 class="titulo">Projetos</h2>
+
+    <div class="container-projetos">
+      <!-- Projetos visíveis por padrão -->
+
+      <div class="projeto ativo">
+        <a href="https://github.com/RaphaelReggiani/ecommerce_hub" target="_blank">
+          <img src="./src/imagens/app_ech.png" alt="E-commerce HUB" />
+          <div class="informacoes-projeto">
+            <p>(Em desenvolvimento) Sistema E-commerce fullstack API-First, utilizando Django RestFramework (DRF) e autenticação via JWT.</p>
+            <br>
+            <p>🔗 Ver no GitHub Pages</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="projeto ativo">
+        <a href="https://github.com/RaphaelReggiani/app_psiquiatria" target="_blank">
+          <img src="./src/imagens/app_gmp.png" alt="Aplicação PSIQUIATRIA." />
+          <div class="informacoes-projeto">
+            <p>Sistema fullstack para gestão de consultas psiquiátricas, com controle de permissões baseado em roles, regras de negócio implementadas em camada de services e API REST autenticada.</p>
+            <br>
+            <p>🔗 Ver no GitHub Pages</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="projeto ativo">
+        <a href="https://github.com/RaphaelReggiani/app_helpdesk" target="_blank">
+          <img src="./src/imagens/app_helpdesk.png" alt="Site para suporte ao cliente via tickets." />
+          <div class="informacoes-projeto">
+            <p>Projeto feito utilizando Python, Django / Django REST Framework, com elementos de HTML / CSS. Consiste em um site de suporte ao cliente via tickets para comunicação com a equipe de Suporte, incluindo detalhes e listas de tickets (com filtros para visualização), assim como as devidas permissões dos usuários.</p>
+            <br>
+            <p>🔗 Ver no GitHub Pages</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="projeto ativo">
+        <a href="https://github.com/RaphaelReggiani/app_cars_db" target="_blank">
+          <img src="./src/imagens/app_carsdb.png" alt="Database de carros com Python e Django." />
+          <div class="informacoes-projeto">
+            <p>Projeto feito utilizando Python, Django / Django REST Framework, com elementos de HTML / CSS, completo e pronto para o deploy. Consiste em um APP de uma database de carros, com perfis de usuários. Funcionalidades: cadastramento de usuários, permissões de usuários, edição de informações pessoais e de carros cadastrados, registro de novos carros, filtros de pesquisas e consulta da database dos carros já cadastrados.</p>
+            <br>
+            <p>🔗 Ver no GitHub Pages</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Projetos ocultos -->
+
+      <div class="projetos-ocultos" style="display:none">
 
         <div class="projeto ativo">
-          <a href="https://github.com/RaphaelReggiani/ecommerce_hub" target="_blank">
-            <img src="./src/imagens/app_ech.png" alt="E-commerce HUB" />
+          <a href="https://github.com/RaphaelReggiani/app_gerenciamento_psicologia" target="_blank">
+            <img src="./src/imagens/app_psicologia.png" alt="Aplicação de psicologia com Python e Django." />
             <div class="informacoes-projeto">
-              <p>(Em desenvolvimento) Sistema E-commerce fullstack API-First, utilizando Django RestFramework (DRF) e autenticação via JWT.</p>
+              <p>Projeto feito utilizando Python e Django, com elementos de HTML, pronto para o deploy. Consiste em um APP de controle e cadastro de pacientes, para a área da psicologia.</p>
               <br>
               <p>🔗 Ver no GitHub Pages</p>
             </div>
@@ -122,72 +172,28 @@
         </div>
 
         <div class="projeto ativo">
-          <a href="https://github.com/RaphaelReggiani/app_psiquiatria" target="_blank">
-            <img src="./src/imagens/app_gmp.png" alt="Aplicação PSIQUIATRIA." />
+          <a href="https://github.com/RaphaelReggiani/Django_API" target="_blank">
+            <img src="./src/imagens/django_API.PNG" alt="Criação de banco de dados Django API Rest Framework." />
             <div class="informacoes-projeto">
-              <p>Sistema fullstack para gestão de consultas psiquiátricas, com controle de permissões baseado em roles, regras de negócio implementadas em camada de services e API REST autenticada.</p>
+              <p>Projeto feito com Python e Django API. Voltado para o uso de APIs.</p>
               <br>
               <p>🔗 Ver no GitHub Pages</p>
             </div>
           </a>
         </div>
-
-        <div class="projeto ativo">
-          <a href="https://github.com/RaphaelReggiani/app_helpdesk" target="_blank">
-            <img src="./src/imagens/app_helpdesk.png" alt="Site para suporte ao cliente via tickets." />
-            <div class="informacoes-projeto">
-              <p>Projeto feito utilizando Python, Django / Django REST Framework, com elementos de HTML / CSS. Consiste em um site de suporte ao cliente via tickets para comunicação com a equipe de Suporte, incluindo detalhes e listas de tickets (com filtros para visualização), assim como as devidas permissões dos usuários.</p>
-              <br>
-              <p>🔗 Ver no GitHub Pages</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="projeto ativo">
-          <a href="https://github.com/RaphaelReggiani/app_cars_db" target="_blank">
-            <img src="./src/imagens/app_carsdb.png" alt="Database de carros com Python e Django." />
-            <div class="informacoes-projeto">
-              <p>Projeto feito utilizando Python, Django / Django REST Framework, com elementos de HTML / CSS, completo e pronto para o deploy. Consiste em um APP de uma database de carros, com perfis de usuários. Funcionalidades: cadastramento de usuários, permissões de usuários, edição de informações pessoais e de carros cadastrados, registro de novos carros, filtros de pesquisas e consulta da database dos carros já cadastrados.</p>
-              <br>
-              <p>🔗 Ver no GitHub Pages</p>
-            </div>
-          </a>
-        </div>
-    
 
       </div>
-        <!-- Projetos ocultos inicialmente -->
 
-        <div class="projetos-ocultos" style="display:none">
-          <div class="projeto ativo">
-            <a href="https://github.com/RaphaelReggiani/app_gerenciamento_psicologia" target="_blank">
-              <img src="./src/imagens/app_psicologia.png" alt="Aplicação de psicologia com Python e Django." />
-              <div class="informacoes-projeto">
-                <p>Projeto feito utilizando Python e Django, com elementos de HTML, pronto para o deploy. Consiste em um APP de controle e cadastro de pacientes, para a área da pscicologia. Funcionalidades: cadastramento de usuários, gerenciamento de usuários, registro de consultas, histórico de consultas, histórico de visualizações, banco de dados das consultas realizadas e gráficos para representação das informações dos pacientes.</p>
-                <br>
-                <p>🔗 Ver no GitHub Pages</p>
-              </div>
-            </a>
-          </div>
+    </div>
 
-          <div class="projeto ativo">
-            <a href="https://github.com/RaphaelReggiani/Django_API" target="_blank">
-              <img src="./src/imagens/django_API.PNG" alt="Criação de banco de dados Django API Rest Framework." />
-              <div class="informacoes-projeto">
-                <p>Projeto feito com Python e Django API. Voltado para o uso de API's.</p>
-                <br>
-                <p>🔗 Ver no GitHub Pages</p>
-              </div>
-            </a>
-          </div>
+    <button type="button" class="btn-mostrar-projetos" id="btn-toggle-projetos">
+      Mostrar mais
+    </button>
 
-        </div>
-    
-      <button class="btn-mostrar-projetos" id="btn-toggle-projetos">Mostrar mais</button>
-    </section>
+  </section>
     
     <footer class="rodape">
-      <p>&copy; 2025 Raphael Regiani. Todos os direitos reservados.</p>
+      <p>&copy; 2026 Raphael Regiani. Todos os direitos reservados.</p>
     </footer>
 
     <script src="./src/js/index.js"></script>

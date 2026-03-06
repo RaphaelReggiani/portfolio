@@ -4,6 +4,10 @@ const projetosOcultos = document.querySelector('.projetos-ocultos');
 let projetosVisiveis = false;
 
 botaoMostrarProjetos.addEventListener('click', () => {
+
+  event.preventDefault();
+  event.stopPropagation();
+  
   projetosVisiveis = !projetosVisiveis;
 
   if (projetosVisiveis) {

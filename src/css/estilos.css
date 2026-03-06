@@ -242,6 +242,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+	position: relative;
+	z-index: 10;
 }
 
 .projetos .btn-mostrar-projetos:hover {
